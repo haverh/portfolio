@@ -1,0 +1,238 @@
+.contact-form-content {
+    height: 85%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-form {
+    width: 75%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding: 5%;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8em;
+}
+
+#contact-form h1{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.input-container {
+    width: 100%;
+    height: 10%;
+    margin: 5px 0;
+}
+
+.input-container label{
+    height: 30%;
+    padding: 0 5px;
+    font-weight: bold;
+}
+
+.input-container input{
+    height: 70%;
+    padding: 0 5px;
+    font-weight: bold;
+}
+
+.msg-container {
+    width: 100%;
+    height: 60%;
+    margin: 5px 0;
+}
+
+.msg-container label{
+    padding: 0 5px;
+    font-weight: bold;
+}
+
+.contact-simple {
+    width: 100%;
+    height: 60%;
+    margin: 0;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;   
+    background-color: #eee;
+    font-size: 1em;
+}
+
+.contact-simple:focus {
+    outline: none;
+}
+
+.contact-msg {
+    width: 100%;
+    height: 80%;
+    margin: 0;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9em;
+    border: none;
+    background-color: #eee;
+    resize: none;
+    font-size: 1em;
+}
+
+.contact-msg::placeholder {
+    color: #6b6a6a;
+    font-weight: bold;
+}
+
+.contact-msg:focus {
+    outline: none;
+}
+
+.contact-submit {
+    width: 100%;
+    height: 10%;
+    margin: 0;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1em;
+    
+    background-color: #2cc3ddda;;
+}
+
+.contact-submit:focus {
+    outline: none;
+}
+
+.contact-submit:hover {
+    cursor: pointer;
+    background-color: #3490a0d2;
+    color: rgb(255, 255, 255);
+}
+
+
+/* Modal */
+#modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0, 0.6);
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: purple;
+    padding: 1% 2%
+}
+
+.modal-header h2 {
+    margin: 0;
+    font-size: 1.3em;
+}
+
+.modal-content {
+    width: 60%;
+    margin: 20% auto;
+    color: aliceblue;
+    background-color: #eee;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px 0 rgba(154, 48, 180, 0.4);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.modal-content p {
+    font-size: 1em;
+    color: black;
+}
+
+#close-button {
+    float: right;
+    font-size: 2em;
+}
+
+#close-button:hover {
+    cursor: pointer;
+    font-size: 2.1em;
+    font-weight: bold;
+}
+
+.open {
+    display: flex;
+    align-items: center;
+}
+
+.closed {
+    display: none;
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #contact-form {
+        width: 60%;
+        height: 60%;
+    }
+
+    .modal-content {
+        width: 50%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1024px) {
+    #contact-form {
+        width: 50%;
+        height: 60%;
+        padding: 3%;
+    }
+
+    #contact-form h1{
+        font-size: 2.2em;
+        font-weight: bold;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    #contact-form {
+        width: 45%;
+        height: 60%;
+        padding: 3%;
+    }
+
+    #contact-form h1{
+        font-size: 2.4em;
+        font-weight: bold;
+    }
+
+    .modal-content {
+        width: 45%;
+    }
+}
+
+@media only screen and (min-width: 1578px) {
+    
+    #contact-form {
+        width: 40%;
+        height: 60%;
+    }
+    
+    #contact-form h1{
+        font-size: 2.5em;
+        font-weight: bold;
+    }
+}
